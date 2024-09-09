@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Met Milad Iftitah</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px auto;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            max-width: 90%;
+            line-height: 1.6;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out 0.5s;
+        }
+
+        .container {
+            margin-top: 20px;
+            padding: 20px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #ff4500;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .audio-container {
+            margin-top: 30px;
+        }
+
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .balloon {
+            position: absolute;
+            width: 80px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            bottom: -150px;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .balloon:nth-child(1) {
+            background-color: #ff4500;
+            left: 10%;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(2) {
+            background-color: #ff6347;
+            left: 30%;
+            animation-delay: 4s;
+        }
+
+        .balloon:nth-child(3) {
+            background-color: #ffd700;
+            left: 50%;
+            animation-delay: 6s;
+        }
+
+        .balloon:nth-child(4) {
+            background-color: #ff69b4;
+            left: 70%;
+            animation-delay: 8s;
+        }
+
+        .balloon:nth-child(5) {
+            background-color: #ffa07a;
+            left: 90%;
+            animation-delay: 10s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-500px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+
+    <div class="container">
+        <img src="/storage/emulated/0/CODING/4nh.jpg" alt="Foto Profil" class="profile-pic">
+        <h1>Selamat Ulang Tahun!</h1>
+        <p>Selamat ulang tahun! Semoga tahun ini menjadi tahun yang penuh dengan berkah dan kebahagiaan. Semoga setiap hari dalam hidupmu dipenuhi dengan cinta dan kedamaian, dan setiap langkahmu diberkati dengan kesehatan dan kesuksesan.
+
+Smuuuoga Tuhan selalu melindungimu, membimbingmu dalam setiap keputusan, dan memberimu power untuk menghadapi setiap tantangan yang mungkin datang. Simigi segala impian dan harapanmu menjadi kenyataan, dan setiap usaha yang kau lakukan membuahkan hasil yang MEMWUASKANN.
+
+Di hari yang penuh makna ini, semoga kau dikelilingi oleh orang-orang yang menyayangimu dan mendukungmu. Semoga kebahagiaan dan kegembiraan senantiasa menyertaimu.
+
+Met milad yee!</p>
+        <button class="btn" onclick="alert('Ea Ea Iphone Gak tuh:v')">Anjay teken dulu</button>
+        
+        <div class="audio-container">
+            <audio controls>
+                <source src="tes.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+    </div>
+
+</body>
+</html>
